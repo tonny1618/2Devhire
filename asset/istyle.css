@@ -252,3 +252,15 @@ label.bvn-candidat{
 #creerannonce .btn:hover {
   color: white;
 }
+
+/*Notation*/
+#notation table{
+  border: medium solid orange;
+  border-collapse:collapse;
+  margin:auto;
+}
+
+#notation td, th {
+  border: thin solid orange;
+  padding: 4px;
+}

@@ -4,6 +4,14 @@
 	<h2>Créer votre CV</h2>
 	<form onsubmit="return foncverif()"">
 		<div class="form-group col-sm-6">
+			<label class="control-label col-sm-2" for="prenom">Civilité : </label>
+			<select name="civilite" id="champcivilite">
+				<option value="0">---</option>
+				<option value ="1">Monsieur</option>
+				<option value="2">Madame</option>
+			</select>
+		</div>
+		<div class="form-group col-sm-6">
 			<label class="control-label col-sm-2" for="prenom">Prénom : </label>
 			<input  class="form-control" type="text" value="" name="" autocomplete="on" id="champPrenom">
 		</div>
