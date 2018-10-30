@@ -1,5 +1,6 @@
  <!-- Search Bar -->
       <div class="-container-fluid" id="blocksearchbar">
+         <h2>Recherche</h2>
          <div class="col-md-6 col-sm-12 col-xs-12" id="searchbar">
             <form class="navbar-form" role="search">
                <div class="input-group add-on">

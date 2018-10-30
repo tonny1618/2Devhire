@@ -38,6 +38,10 @@ header .navbar {
 
 /*Search Bar*/
 
+#blocksearchbar  h2 {
+  color: white;
+  text-align: center;
+}
 #blocksearchbar .navbar-form .input-group{
   width: 100%;
 }
@@ -48,7 +52,7 @@ header .navbar {
 
 
 #blocksearchbar {
-  height: 200px;
+  height: 250px;
   background-image: linear-gradient(to bottom, #5c5757, #905d58, #bd644f, #e26f39, #ff8100);    padding-top: 5%;
   margin-top: -20px;
   padding-left: 3%;
@@ -230,7 +234,7 @@ label.bvn-candidat{
 
 /*Créer une annnonce */
 #creerannonce {
-  background-image: url('images/question-mark-1872634_1920.jpg');
+  /*background-image: url('images/question-mark-1872634_1920.jpg');*/
   background-size: cover;
     color: white;
 }
@@ -251,4 +255,46 @@ label.bvn-candidat{
 
 #creerannonce .btn:hover {
   color: white;
+}
+
+/*Espace client*/
+
+#espaceclient {
+  min-height: 25em;
+   background-image: url('images/question-mark-1872634_1920.jpg');
+  background-size: cover;
+    color: white;
+}
+
+#espaceclient h2 {
+  text-align: center;
+}
+
+#espaceclient .nav-tabs.nav-justified>.active>a {
+      border-top : 1px solid #fa4414;
+      border-left: 1px solid #fa4414;
+      border-right: 1px solid #fa4414;
+      text-transform: uppercase;
+      font-weight: bold;
+}
+
+#espaceclient .nav-tabs>li>a:hover {
+    border-color: #fa4414 #fa4414 #ddd;
+  }
+
+#espaceclient a:hover {
+  color: #555;
+}
+
+#espaceclient a {
+  color : #d5d5d5
+}
+
+#espaceclient li.active a {
+  color : #666464
+}
+
+#espaceclient .tab-content {
+  min-height: 250px;
+  background: #80808026;
 }

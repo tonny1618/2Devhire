@@ -1,5 +1,4 @@
-<?php require ("head.php") ?>
-<?php require("navbar.php")?>
+
 
 <div id="creerannonce">
 <div class="container">
@@ -50,7 +49,7 @@
         <input class="form-control" type="date"  name="">
       </div>
 
-      <div class="col-md-12 col-md-offset-10">
+      <div class="col-md-12 col-md-offset-8">
     <div class="form-group col-md-6">
       <button type="submit" class="btn btn-secondary btn-lg hvr-bounce-to-right">Envoyer</button>
     </div>
@@ -64,5 +63,5 @@
 </div>
 </div>
 
-
-<?php require('footer.php') ?>
+</body>
+</html>
