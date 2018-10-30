@@ -1,6 +1,7 @@
 <?php require ("head.php") ?>
 <?php require("navbar.php")?>
 
+<div id="contact" class="container-fluid">
     <form class="col-sm-6 col-sm-push-3" method="get" onsubmit="return foncverif()">
       <legend>Contact</legend>
       <div class="form-group col-sm-12">
@@ -53,6 +54,7 @@
       </div>
   
     </form>
+</div>
   </body>
 </html>
 
