@@ -1,0 +1,254 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header .navbar {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #4a4a4a;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: #5C5757;
+}
+.navbar-nav{
+  margin-top: 40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 20px;
+  color: #b5b5b5;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color:white;
+  border-bottom: 2px solid white;
+}
+
+.navbar-left img {
+  width:70%;
+  margin-top: -100px
+}
+
+.navbar-right{
+  margin-top: 10px;
+}
+
+/*Search Bar*/
+
+#blocksearchbar .navbar-form .input-group{
+  width: 100%;
+}
+
+#blocksearchbar .inputsearch {
+  height: 60px;
+}
+
+
+#blocksearchbar {
+  height: 200px;
+  background-image: linear-gradient(to bottom, #5c5757, #905d58, #bd644f, #e26f39, #ff8100);    padding-top: 5%;
+  margin-top: -20px;
+  padding-left: 3%;
+  border-bottom: 2px solid #4a4a4a;
+}
+
+#blocksearchbar #boutonRecherche {
+  margin-left: 2px;
+  height: 60px;
+  border-radius: 0;
+}
+
+#ville .inputsearch {
+  border-radius: 0;
+}
+
+
+#inscription{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+legend{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom : 5%;
+}
+/*Bloc avec Images*/
+#blocavecimages {
+  background-image: url('images/network-3683761_1920.jpg');
+  background-size: contain;
+}
+
+/*Bloc Dernières Annonces */
+
+#dernieresAnnonces {
+  height: 325px;
+  
+}
+#dernieresAnnonces  h2 {
+  text-align: center;
+    color: #4e4e4e;
+    height: 50px;
+    background: #ffffffa6;
+    padding-top: 10px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 640px) {
+  #dernieresAnnonces  h2 {
+   font-size: 25px; 
+  }
+}
+
+#dernieresAnnonces  a {
+  color: #3a3a3a;
+}
+
+#dernieresAnnonces  a:hover {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.blocannonce {
+    border-radius: 5px;
+    /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 5px 5px 0px rgb(218, 114, 8);*/
+    max-height: 180px;
+    background: white;
+    color: #353535;
+}
+
+.blocannonce h4 {
+  font-weight: bold;
+}
+
+
+
+/*Bloc Envoyer*/
+#envoyer {
+  height: 250px;
+  /*border-top: 2px solid #4a4a4a;*/
+  border-bottom: 2px solid #4a4a4a;
+  /* background-image: linear-gradient(to top, #2b2a2a, #663a36, #9e4b38, #d2622e, #ff8100); */
+}
+@media screen and (max-width: 768px) {
+  #envoyer {
+    margin-top: 25%
+  }
+}
+.boutonCV {
+  padding-top: 8%;
+  padding-left: 16%;
+}
+
+.boutonDeposer {
+  padding-top: 8%;
+  padding-left: 15%;
+
+}
+
+.btn-secondary:before {
+  background: #787a7c;
+  color: white;
+}
+
+.hvr-bounce-to-right:before {
+  background: #ffae00;
+}
+
+footer {
+  height: 200px;
+  background-color: #2b2a2a;
+}
+
+footer h2 {
+  color: #b9b9b9;
+}
+
+footer a {
+  color: #bf6202;
+}
+
+footer a:hover {
+  color: #bf3703;
+  font-style: italic;
+  text-decoration: none;
+}
+footer p { 
+  color: #bbbbbb;
+ }
+
+
+
+/*Formulaire CV */
+#formulairecv {
+background: rgb(92,87,87);
+background: -moz-linear-gradient(180deg, rgba(92,87,87,1) 36%, rgba(237,87,0,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(92,87,87,1) 36%, rgba(237,87,0,1) 100%);
+background: linear-gradient(180deg, rgba(92,87,87,1) 36%, rgba(237,87,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c5757",endColorstr="#ed5700",GradientType=1);
+
+color: white;
+}
+
+#formulairecv legend {
+  color: white;
+}
+
+
+#add {
+  cursor: pointer;
+}
+
+/*espace client*/
+#boutonRecherche2 {
+  margin-left: 95%;
+  height: 60px;
+  border-radius: 0;
+}
+
+/*Documents candidat*/
+fieldset.doc-candidat {
+  margin-top:5%;
+  margin-bottom:8%;
+  text-align: center;
+}
+label.bvn-candidat{
+  text-align: center;
+  font-size:24px;
+  height: 120px;
+}
+
+
+/*Créer une annnonce */
+#creerannonce {
+  background-image: url('images/question-mark-1872634_1920.jpg');
+  background-size: cover;
+    color: white;
+}
+
+#creerannonce h2 {
+  text-align: center;
+}
+
+#creerannonce label {
+  font-weight: normal;
+
+}
+
+#creerannonce .btn {
+  color: #fa4414;
+  border: 1px solid #ffae00;
+}
+
+#creerannonce .btn:hover {
+  color: white;
+}

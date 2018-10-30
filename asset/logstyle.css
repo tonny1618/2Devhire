@@ -1,0 +1,74 @@
+#login {
+	background-image: url('images/login3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.login-box {
+	font-family: lato;
+	width:280px;
+	color: black;
+	margin-top: 8%;
+}
+
+.login-box h1 {
+	float: left;
+	font-size: 40px;
+	border-bottom: 6px;
+	margin-bottom: 50px;
+	padding: 13px 0;
+	color:black;
+}
+.login-box .textbox {
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 2px solid orange;
+	color: black;
+}
+
+.login-box .textbox input {
+	border: none;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+
+.login-box .textbox i {
+	width: 26px;
+	float: left;
+	color: black;
+
+}
+
+.login-box .btn {
+	width: 100%;
+	background: none;
+	border : 2px solid orange;
+	color :black;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 10px 0;
+}
+
+.login-box .bbtn {
+	width:45%;
+	background: none;
+	border: none;
+	color: black;
+	font-size: 25px;
+	border-bottom: 4px solid orange;
+	margin-bottom: 20px;
+	padding: 13px 0;
+	cursor: pointer;
+}
+
+::placeholder {
+	color:black;
+}
