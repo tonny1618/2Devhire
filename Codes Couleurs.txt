@@ -1,0 +1,13 @@
+#fa4414 : Joli orange
+#5c5757 : Couleur menu
+#787a7c : couleur gris logo
+#ffae00 : Couleur orange logo
+
+Orange : #FCBC2F
+Orange : #FBAC04
+
+Gray : #7D7D7D
+
+Gainsboro : #E8E7E6
+
+Sandy Brown : #F8C867

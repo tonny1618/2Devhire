@@ -11,11 +11,11 @@
                   <a href="index.php" class="nav navbar-nav navbar-left"><img src="asset/images/logo.png" alt="logo"></a>
                </div>
                <ul class=" collapse navbar-collapse nav navbar-nav">
-                  <li><a href='index.php'>Accueil</a></li>
-                  <li><a href='#'>Espace Candidat</a></li>
-                  <li><a href='espace_client.php'>Espace Entreprise</a></li>
-                  <li><a href='#'>Recherche</a></li>
-                  <li><a href='contact.php'>Contact</a></li>
+                  <li><a href='index.php' class="hvr-underline-from-left">Accueil</a></li>
+                  <li><a href='#' class="hvr-underline-from-left">Espace Candidat</a></li>
+                  <li><a href='espace_client.php' class="hvr-underline-from-left">Espace Entreprise</a></li>
+                  <li><a href='#' class="hvr-underline-from-left">Recherche</a></li>
+                  <li><a href='contact.php' class="hvr-underline-from-left">Contact</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">
                   <li><a href='login.php'><span class='glyphicon glyphicon-log-in'></span> Connectez-vous </a></li>

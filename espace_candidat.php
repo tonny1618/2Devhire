@@ -1,17 +1,17 @@
 <?php require ("head.php") ?>
-<div id="espaceclient" class="col-md-12 container">
-<?php require("navbar.php")?>
 
+<div id="espacecandidat" class="col-md-12 container">
+<?php require("navbar.php")?>
 
 	<h2>Bienvenu '...'</h2>
 		<div class="row" id="boutoncollapse">
 
 
 	<div class="col-md-3 col-md-offset-2">
-		<button class="btn btn-lg hvr-shutter-out-vertical" data-toggle="collapse" data-target="#depotannonce">Déposer une annonce</button>
+		<button class="btn btn-lg hvr-shutter-out-vertical" data-toggle="collapse" data-target="#depotannonce">Déposer un CV</button>
 	</div>
 	<div class="col-md-3">
-		<button class="btn btn-lg hvr-shutter-out-vertical" data-toggle="collapse" data-target="#gereannonces">Gérer mes annonces</button>
+		<button class="btn btn-lg hvr-shutter-out-vertical" data-toggle="collapse" data-target="#gereannonces">Gérer vos annonces</button>
 	</div>
 	<div class="col-md-3">
 		<button class="btn btn-lg hvr-shutter-out-vertical" data-toggle="collapse" data-target="#mesdocuments">Mes Documents</button>
@@ -20,7 +20,7 @@
 
 	<div id="bloccollapse" class="col-md-12">
 			<div id="depotannonce" class="collapse">
-				<?php require('creer_annonce.php') ?>
+				<?php require('formulairecv_espacecandidat.php') ?>
 
 			</div>
 			<div id="gereannonces" class="collapse">
@@ -38,4 +38,4 @@
 <?php require('searchbar.php'); ?>
 </div>
 
-<?php require('footer.php');?>
+<?php require('footer.php');

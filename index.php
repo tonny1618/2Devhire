@@ -1,10 +1,10 @@
 <?php require ("head.php") ?>
+      <div id="blocavecimages">
 <?php require("navbar.php")?>
 <?php require('searchbar.php')?> 
 <?php require('connectbdd.php')?>   
 
        
-      <div id="blocavecimages">
       
       <div id="dernieresAnnonces" class="container-fluid">
          <h2>Dernières Annonces</h2>
