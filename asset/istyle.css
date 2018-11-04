@@ -167,6 +167,9 @@ legend{
 
   }
 
+  .btn {
+    color: white; 
+  }
   .btn-secondary:before {
     background: #787a7c;
     color: white;
@@ -227,6 +230,8 @@ legend{
     height: 60px;
     border-radius: 0;
   }
+
+
 
   /*Documents candidat*/
   fieldset.doc-candidat {
@@ -295,6 +300,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   #espaceclient a:hover {
     color: #555;
+  }
+
+  #espaceclient .hvr-shutter-out-vertical:before {
+    background: #ffae00;
   }
 
   #espaceclient a {
