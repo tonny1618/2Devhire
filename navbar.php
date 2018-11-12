@@ -14,7 +14,7 @@
                   <li><a href='index.php'>Accueil</a></li>
                   <li><a href='#'>Espace Candidat</a></li>
                   <li><a href='espace_client.php'>Espace Entreprise</a></li>
-                  <li><a href='#'>Recherche</a></li>
+                  <li><a href='qui_sommes_nous.php'>Qui sommes-nous?</a></li>
                   <li><a href='contact.php'>Contact</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right">

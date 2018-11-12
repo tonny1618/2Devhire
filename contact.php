@@ -1,6 +1,8 @@
 <?php require ("head.php") ?>
 <?php require("navbar.php")?>
 
+
+<div id="contact" class="container-fluid">
     <form class="col-sm-6 col-sm-push-3" method="get" onsubmit="return foncverif()">
       <legend>Contact</legend>
       <div class="form-group col-sm-12">
@@ -48,54 +50,16 @@
 
       <div class="form-group col-sm-12">
         <div id="send" class="col-md-12 text-center"> 
-          <button id="send" name="send" class="btn btn-primary">Envoyer</button>
+          <button id="send" name="send" class="btn btn-secondary btn-lg hvr-bounce-to-right">Envoyer</button>
         </div>
       </div>
   
     </form>
+</div>
+
   </body>
+
 </html>
 
-
-<script type="text/javascript">
-
-  //Vérification remplissage des champs avant validation du formulaire!
-
-    function foncverif(){
-      var ttNom=document.getElementById("champNom");
-      if(ttNom.value.trim()==''){
-      alert("Vous devez indiquer votre nom ou votre raison sociale.");
-      ttNom.focus();
-      return false;
-      }
-
-      var ttPrenom=document.getElementById("champPrenom");
-      if(ttPrenom.value.trim()==''){
-      alert("Vous devez indiquer votre prénom.");
-      ttNom.focus();
-      return false;
-      }
-
-      var ttEmail=document.getElementById("champEmail");
-      if(ttEmail.value.trim()==''){
-      alert("Vous devez indiquer votre adresse e-mail.");
-      ttNom.focus();
-      return false;
-      }
-
-      var ttSujet=document.getElementById("champSujet");
-      if (ttSujet.selectedIndex==0){
-      alert("Vous devez préciser le sujet de votre requête.");
-      ttNom.focus();
-      return false;
-      }
-
-      var ttMessage=document.getElementById("champMessage");
-      if(ttMessage.value.trim()==''){
-        alert("Vous n'avez pas rédigé votre message!")
-        ttMessage.focus();
-        return false;
-      }
-      return true;
-    }
-</script>
+<script type="text/javascript" src="asset/js/contact.js"></script>
+  <?php require("footer.php");?>

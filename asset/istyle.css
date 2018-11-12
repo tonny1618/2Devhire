@@ -252,3 +252,20 @@ label.bvn-candidat{
 #creerannonce .btn:hover {
   color: white;
 }
+
+/*Contact*/
+#contact{
+  background-image:url('images/keyboard.jpg');
+  background-size:cover;
+}
+
+/*Qui sommes-nous*/
+#quisommesnous {
+  background-image: url('images/connection_2.jpg');
+  background-size: cover;
+}
+
+/*Administrateur*/
+#admin  ul li  a{
+  color : #fa4414;
+}

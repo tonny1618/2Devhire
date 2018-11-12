@@ -1,9 +1,10 @@
 <?php require ("head.php") ?>
 <?php require("navbar.php")?>
+<?php require("database.php")?>
 
 <body>
 
-<div class="container">
+<div id="admin" class="container">
   <h2>Partie Administrateur</h2>
 
   <ul class="nav nav-tabs">
