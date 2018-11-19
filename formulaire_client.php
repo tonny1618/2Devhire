@@ -1,116 +1,123 @@
-<<<<<<< HEAD
+
 <?php require ("head.php") ?>
 <?php require("navbar.php")?>
 
-=======
-<!DOCTYPE html>
-<html>
-<head>
- <title>Dev'Hire Agency</title>
- <metacharset="utf-8"/>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <link rel="stylesheet" href="asset/istyle.css"/>
-</head>
-<body>
+<form method="post">
+    <?php
+    $bdd=new PDO("mysql:host=localhost; charset=latin1; dbname=devhire; port=3307", 'root', 'root');
+    if(empty($_GET)){
+      if(!empty($_POST)){
+        $raison=$_POST['raison'];
+        $siret=$_POST['siret'];
+        $adresse=$_POST['adresse'];
+        $codepostal=$_POST['codepostal'];
+        $telephone=$_POST['telephone'];
+        $nom=$_POST['nom'];
+        $prenom=$_POST['prenom'];
+        $mail=$_POST['mail'];
+        $mdp=$_POST['mdp'];
 
-  <header>
-    <nav class="navbar navbar-default">
+        $SQLQuery='call ajoutclient(:codepostal, :adresse, :nom, :prenom, :siret, :raison, :telephone, :mail, :mdp)';
 
-      <div class="container-fluid">
-        <div class="nav navbar-nav navbar-header">
-           <a href="#" class="nav navbar-nav navbar-left"><img src="asset/images/logo.png" alt="logo"></a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href='#'>Accueil</a></li>
-          <li><a href='#'>Espace Candidat</a></li>
-          <li><a href='#'>Espace Entreprise</a></li>
-          <li><a href='#'>Recherche</a></li>
-          <li><a href='#'>Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-           <li><a href='#'><span class='glyphicon glyphicon-log-in'></span> Connectez-vous </a></li>
-        </ul>
-      </div>
+        $statement = $bdd->prepare($SQLQuery);
+        $statement->bindValue(':raison', $raison);
+        $statement->bindValue(':siret', $siret);
+        $statement->bindValue(':adresse', $adresse);
+        $statement->bindValue(':codepostal', $codepostal);
+        $statement->bindValue(':telephone', $telephone);
+        $statement->bindValue(':nom', $nom);
+        $statement->bindValue(':prenom', $prenom);
+        $statement->bindValue(':mail', $mail);
+        $statement->bindValue(':mdp', $mdp);
+        $statement->execute();
+        $statement->closeCursor();
+      }
+    }
+    ?>
 
-    </nav>
-  </header>
-  
->>>>>>> e373d2b8d258fb6173065c22736b553dca4b2699
-  <form>
     <legend>Inscription Entreprise</legend>
     <div class="form-group col-sm-6">
       <div class="col-sm-12">
         <label for="raison_sociale">Raison sociale : </label>
-        <input id="raison_sociale" type="text" class="form-control" name="" value="">
+        <input id="raison_sociale" type="text" class="form-control" name="raison" value="">
       </div>
     </div>
 
     <div class="form-group col-sm-6">
       <div class="col-sm-3">
         <label>n°de SIRET : </label>
-        <input type="text" class="form-control" name="" value="">
+        <input type="text" class="form-control" name="siret" value="">
       </div>
     </div>
 
     <div class="form-group col-sm-12">
       <div class="col-sm-9">
         <label for="adresse">Adresse : </label>
-        <input id="adresse" type="text" class="form-control" name="" value="" placeholder="Saisir adresse"> </br>
-        <input type"text" name="" value="" class="form-control" placeholder="complément d'adresse 1"> </br>
-        <input type"text" name="" value="" class="form-control" placeholder="complément d'adresse 2"> </br>
+        <input id="adresse" type="text" class="form-control" name="adresse" value="" placeholder="Saisir adresse"> </br>
       </div>
     </div>
 
     <div class="form-group col-sm-12">
       <div class="col-sm-3">
         <label for="code_postal">Code postal : </label>
-        <input id="code_postal" type="text" class="form-control" name="" value="">
+        <input id="code_postal" type="text" class="form-control" name="codepostal" value="">
       </div>
     </div>
 
-    <div class="form-group col-sm-12">
+    <!--<div class="form-group col-sm-12">
       <div class="col-sm-3">
         <label for="ville">Ville : </label>
-        <input id="ville" type="text" class="form-control" name="" value="">
+        <input id="ville" type="text" class="form-control" name="ville" value="">
       </div>
-    </div>
+    </div>-->
 
     <div class="form-group col-sm-12">
       <div class="col-sm-3">
         <label for="telephone">Téléphone : </label>
-        <input id="telephone" type="text" class="form-control" name="" value="">
+        <input id="telephone" type="text" class="form-control" name="telephone" value="">
+      </div>
+    </div>
+
+
+    <div class="form-group col-sm-12">
+      <div class="col-sm-3">
+        <label for="nom">Nom à contacter : </label>
+        <input id="nom" type="text" class="form-control" name="nom" value="">
+      </div>
+    </div>
+
+
+    <div class="form-group col-sm-12">
+      <div class="col-sm-3">
+        <label for="renom">Prenom à contacter : </label>
+        <input id="prenom" type="text" class="form-control" name="prenom" value="">
       </div>
     </div>
 
     <div class="form-group col-sm-12">
       <div class="col-sm-6">
         <label for="email">Email : </label>
-        <input id="email" type="email" class="form-control"name="" value="">
+        <input id="email" type="email" class="form-control"name="mail" value="">
       </div>
     </div>
 
     <div class="form-group col-sm-12">
       <div class="col-sm-3">
         <label for="password">Mot de passe : </label>
-        <input id="password" type="password" class="form-control" name="" value="">
+        <input id="password" type="password" class="form-control" name="mdp" value="">
       </div>
     </div>
 
-    <div class="form-group col-sm-12">
+    <!--<div class="form-group col-sm-12">
      <div class="col-sm-3">
       <label for="repeat_password"> Répéter le mot de passe : </label>
       <input id="repeat_password" type="password" class="form-control" name="" value="">
     </div>
-    </div>
+    </div>-->
 
     <div id="inscription" class="col-md-12 text-center"> 
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">S'inscrire</button>
+        <button type="submit" class="btn btn-primary"></button>
     </div> 
 
   </form>
-
-</body>
-</html>
+  <?php require("footer.php")?>
