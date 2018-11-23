@@ -1,0 +1,88 @@
+/*  Page des Listes d'Annonces */
+
+#listeAnnonces
+{
+    font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url("images/annonce.png");
+    display: inline-block;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#listeAnnonces .container 
+{
+  border: 1px solid #666;
+  background: #999;
+  width: 800px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  padding: 60px 0;
+}
+
+#listeAnnonces button
+{
+    float: right;
+    right: 10px;
+}
+
+#listeAnnonces h1
+{
+    
+    position: relative;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: 40px;
+    padding: 10px 0;
+}
+
+/* detail annonce */
+
+#detailAnnonce p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    display: inline-block;
+    color: #222;
+    font-weight: bold;
+    text-align: left;
+    width: 900px;
+   /* padding-bottom: 400px;*/
+    margin-bottom: 400px;
+
+}
+
+#detailAnnonce h2
+{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+    
+}
+
+#detailAnnonce #button1
+{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+
+}
+
+#detailAnnonce #button2
+{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+
+}
+
+#detailAnnonce a 
+{
+    text-decoration: none;
+    color: #eee;
+    background: #ff4502;
+    
+}
+

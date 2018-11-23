@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 <?php require ("head.php") ?>
 <?php require("navbar.php")?>
 
-=======
 <!DOCTYPE html>
 <html>
 <head>

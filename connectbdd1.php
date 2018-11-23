@@ -8,7 +8,7 @@ $result = $conn->query($query);
 
 	while ($row = $result->fetchObject()) {
 	
-	var_dump($row);
+	// var_dump($row);
 
 	}
 
